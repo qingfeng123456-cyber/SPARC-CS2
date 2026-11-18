@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying SPARC-CS2 manuscript when using this research code. Publication metadata will be added after it is finalized."
+type: software
+repository-code: "https://github.com/qingfeng123456-cyber/SPARC-CS2"
+title: "SPARC-CS2: Spatial Attribution and Rule-Guided Next-Event Forecasting in Counter-Strike 2"
+version: 0.1.0
+date-released: 2026-11-18
+authors:
+  - family-names: "Xia"
+    given-names: "Weijun"
+    affiliation: "University of Electronic Science and Technology of China, Chengdu, China"
+    email: "2024080904009@std.uestc.edu.cn"
+    orcid: "https://orcid.org/0009-0002-8165-0955"
+  - family-names: "Zhao"
+    given-names: "Weihua"
+    affiliation: "Beijing Institute of Technology, Beijing, China"
+    email: "1120241951@bit.edu.cn"
+license: MIT
+abstract: "Research code for causal defender-observation next-event forecasting with neural and risk-set boosting, spatial attribution, and public game-rule and deadline projections."

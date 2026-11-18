@@ -1,0 +1,4 @@
+# Optional: only for parsing independently acquired native DEMO files.
+-r requirements.txt
+demoparser2==0.42.2
+pandas==3.1.1

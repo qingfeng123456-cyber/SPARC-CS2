@@ -1,0 +1,105 @@
+{
+  "imports": [
+    "data",
+    "models",
+    "training",
+    "report",
+    "main"
+  ],
+  "help": true,
+  "real_summary_redraw": [
+    "baseline_joint_forest",
+    "baseline_series_heatmap",
+    "baseline_score_plane"
+  ],
+  "report_unit_tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "full_training_run_in_release_verification": false,
+  "libraries": {
+    "torch": "2.12.1+cu126",
+    "numpy": "2.4.6"
+  },
+  "protocol_metadata": {
+    "dev": {
+      "series": 10,
+      "rounds": 210,
+      "cutoffs": 18210,
+      "sha256": "6ca193300d28b63d8df8cf5047a021bb0e34b6869c8abc116e87435cee1a8e79"
+    },
+    "rio": {
+      "series": 11,
+      "rounds": 215,
+      "cutoffs": 19655,
+      "sha256": "3b9e4983d6e118fa98232ea1384762f2e34b24c175236544cb7214e879cfab01"
+    }
+  },
+  "architecture_checks": {
+    "MLP": {
+      "joint_classes": 10221,
+      "probability_normalized": true,
+      "padding_after_cutoff_invariance": true,
+      "parameters_test_width32": 354833
+    },
+    "GRU": {
+      "joint_classes": 10221,
+      "probability_normalized": true,
+      "padding_after_cutoff_invariance": true,
+      "parameters_test_width32": 394193
+    },
+    "TCN": {
+      "joint_classes": 10221,
+      "probability_normalized": true,
+      "padding_after_cutoff_invariance": true,
+      "parameters_test_width32": 379121
+    },
+    "TRANSFORMER": {
+      "joint_classes": 10221,
+      "probability_normalized": true,
+      "padding_after_cutoff_invariance": true,
+      "parameters_test_width32": 404593
+    }
+  },
+  "real_match_feature_checks": [
+    {
+      "role": "train",
+      "match_id": "2393003",
+      "round_uid": "2393003_000",
+      "frames": 154,
+      "feature_dimensions": 482,
+      "core_neural_272_exact": true,
+      "core_site_192_exact": true,
+      "core_tree_extra18_exact": true,
+      "eligibility_exact": true,
+      "prefix_invariance": true,
+      "label_independence": true
+    },
+    {
+      "role": "validation",
+      "match_id": "2392409",
+      "round_uid": "2392409_000",
+      "frames": 186,
+      "feature_dimensions": 482,
+      "core_neural_272_exact": true,
+      "core_site_192_exact": true,
+      "core_tree_extra18_exact": true,
+      "eligibility_exact": true,
+      "prefix_invariance": true,
+      "label_independence": true
+    },
+    {
+      "role": "test",
+      "match_id": "2393088",
+      "round_uid": "2393088_000",
+      "frames": 126,
+      "feature_dimensions": 482,
+      "core_neural_272_exact": true,
+      "core_site_192_exact": true,
+      "core_tree_extra18_exact": true,
+      "eligibility_exact": true,
+      "prefix_invariance": true,
+      "label_independence": true
+    }
+  ]
+}

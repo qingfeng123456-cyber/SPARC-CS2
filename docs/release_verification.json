@@ -1,0 +1,482 @@
+{
+  "model": "SPARC-CS2",
+  "release_date": "2026-11-18",
+  "environment": {
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "torch": "2.12.1+cu126",
+    "sklearn": "1.9.0",
+    "joblib": "1.5.3",
+    "scipy": "1.17.1"
+  },
+  "data_counts": {
+    "train": {
+      "series": 30,
+      "rounds": 650,
+      "cutoffs": 56704
+    },
+    "validation": {
+      "series": 10,
+      "rounds": 210,
+      "cutoffs": 18210
+    },
+    "test": {
+      "series": 11,
+      "rounds": 215,
+      "cutoffs": 19655
+    },
+    "inner_fit": {
+      "series": 22,
+      "rounds": 479,
+      "cutoffs": 41521
+    },
+    "inner_val": {
+      "series": 8,
+      "rounds": 171,
+      "cutoffs": 15183
+    }
+  },
+  "frozen_comparison": {
+    "cohort": "development",
+    "round_id": "2392407_000",
+    "cutoff_count": 9,
+    "source": "Original saved raw factorized laws and original per-cutoff evaluation archives",
+    "seeds": {
+      "2026": {
+        "NEURAL": {
+          "max_probability_difference": 2.7257855134132924e-07,
+          "max_tail_difference": 2.035540809797176e-07,
+          "max_normalization_error": 5.330767600675301e-07,
+          "max_score_difference": {
+            "nll": 9.5367431640625e-07,
+            "time_nll": 7.180290613195695e-07,
+            "probability_a_b_10s": 7.081595226887671e-09
+          }
+        },
+        "TREE": {
+          "max_probability_difference": 0.0,
+          "max_tail_difference": 0.0,
+          "max_normalization_error": 2.220446049250313e-16,
+          "max_score_difference": {
+            "nll": 0.0,
+            "time_nll": 0.0,
+            "probability_a_b_10s": 0.0
+          }
+        },
+        "BASE_MIX": {
+          "max_probability_difference": 1.362892756984202e-07,
+          "max_tail_difference": 1.0177704046210323e-07,
+          "max_normalization_error": 2.6653837981172046e-07,
+          "max_score_difference": {
+            "nll": 4.905249506581555e-07,
+            "time_nll": 3.937234296369496e-07,
+            "probability_a_b_10s": 3.5407994175562507e-09
+          }
+        },
+        "SITE": {
+          "max_probability_difference": 1.3557505806893744e-07,
+          "max_tail_difference": 1.0177704046210323e-07,
+          "max_normalization_error": 2.6653838003376507e-07,
+          "max_score_difference": {
+            "nll": 4.902084107527571e-07,
+            "time_nll": 3.937234289708158e-07,
+            "probability_a_b_10s": 7.206162486173007e-09
+          }
+        },
+        "RULES": {
+          "max_probability_difference": 1.3190699138521111e-07,
+          "max_tail_difference": 1.0177704046210323e-07,
+          "max_normalization_error": 2.6653837981172046e-07,
+          "max_score_difference": {
+            "nll": 4.570376002099863e-07,
+            "time_nll": 3.93723429414905e-07,
+            "probability_a_b_10s": 3.5407994175562507e-09
+          }
+        },
+        "FULL": {
+          "max_probability_difference": 1.3189270692270938e-07,
+          "max_tail_difference": 1.0177704046210323e-07,
+          "max_normalization_error": 2.6653837958967586e-07,
+          "max_score_difference": {
+            "nll": 4.5702856787954715e-07,
+            "time_nll": 3.937234289708158e-07,
+            "probability_a_b_10s": 7.206162486173007e-09
+          }
+        },
+        "SHUFFLE_RULES": {
+          "max_probability_difference": 1.3189270692270938e-07,
+          "max_tail_difference": 1.0177704046210323e-07,
+          "max_normalization_error": 2.6653837958967586e-07,
+          "max_score_difference": {
+            "nll": 4.5702856787954715e-07,
+            "time_nll": 3.937234289708158e-07,
+            "probability_a_b_10s": 3.609754502253981e-09
+          }
+        }
+      },
+      "2027": {
+        "NEURAL": {
+          "max_probability_difference": 1.2177914626709807e-07,
+          "max_tail_difference": 1.1669624942062251e-07,
+          "max_normalization_error": 5.41566001377447e-07,
+          "max_score_difference": {
+            "nll": 1.430511474609375e-06,
+            "time_nll": 8.679144336554145e-07,
+            "probability_a_b_10s": 3.669933090755251e-08
+          }
+        },
+        "TREE": {
+          "max_probability_difference": 0.0,
+          "max_tail_difference": 0.0,
+          "max_normalization_error": 2.220446049250313e-16,
+          "max_score_difference": {
+            "nll": 0.0,
+            "time_nll": 0.0,
+            "probability_a_b_10s": 0.0
+          }
+        },
+        "BASE_MIX": {
+          "max_probability_difference": 6.088957310579346e-08,
+          "max_tail_difference": 5.83481247137807e-08,
+          "max_normalization_error": 2.707830009107681e-07,
+          "max_score_difference": {
+            "nll": 5.137308960456721e-07,
+            "time_nll": 2.834610350888056e-07,
+            "probability_a_b_10s": 1.8349669006489933e-08
+          }
+        },
+        "SITE": {
+          "max_probability_difference": 6.060585647227335e-08,
+          "max_tail_difference": 5.83481247137807e-08,
+          "max_normalization_error": 2.707830006887235e-07,
+          "max_score_difference": {
+            "nll": 3.9574485422022576e-07,
+            "time_nll": 2.834610346447164e-07,
+            "probability_a_b_10s": 1.036748095706308e-08
+          }
+        },
+        "RULES": {
+          "max_probability_difference": 6.086916456982117e-08,
+          "max_tail_difference": 5.83481247137807e-08,
+          "max_normalization_error": 2.707830009107681e-07,
+          "max_score_difference": {
+            "nll": 5.137308960456721e-07,
+            "time_nll": 2.83461035976984e-07,
+            "probability_a_b_10s": 1.8349669006489933e-08
+          }
+        },
+        "FULL": {
+          "max_probability_difference": 6.086349013667558e-08,
+          "max_tail_difference": 5.83481247137807e-08,
+          "max_normalization_error": 2.707830006887235e-07,
+          "max_score_difference": {
+            "nll": 3.9574485422022576e-07,
+            "time_nll": 2.834610355328948e-07,
+            "probability_a_b_10s": 1.0367480970940868e-08
+          }
+        },
+        "SHUFFLE_RULES": {
+          "max_probability_difference": 6.086349013667558e-08,
+          "max_tail_difference": 5.83481247137807e-08,
+          "max_normalization_error": 2.707830006887235e-07,
+          "max_score_difference": {
+            "nll": 3.945493882717699e-07,
+            "time_nll": 2.834610355328948e-07,
+            "probability_a_b_10s": 9.977772691405207e-09
+          }
+        }
+      },
+      "2028": {
+        "NEURAL": {
+          "max_probability_difference": 1.9619930910486083e-07,
+          "max_tail_difference": 8.754933425447753e-08,
+          "max_normalization_error": 8.917113354378614e-07,
+          "max_score_difference": {
+            "nll": 2.1457672119140625e-06,
+            "time_nll": 1.411468042000763e-06,
+            "probability_a_b_10s": 3.172761298131377e-08
+          }
+        },
+        "TREE": {
+          "max_probability_difference": 0.0,
+          "max_tail_difference": 0.0,
+          "max_normalization_error": 2.220446049250313e-16,
+          "max_score_difference": {
+            "nll": 0.0,
+            "time_nll": 0.0,
+            "probability_a_b_10s": 0.0
+          }
+        },
+        "BASE_MIX": {
+          "max_probability_difference": 9.809965453855263e-08,
+          "max_tail_difference": 4.377466716887213e-08,
+          "max_normalization_error": 4.458556677189307e-07,
+          "max_score_difference": {
+            "nll": 1.1535470196832875e-06,
+            "time_nll": 6.982578875103229e-07,
+            "probability_a_b_10s": 1.5863806476779096e-08
+          }
+        },
+        "SITE": {
+          "max_probability_difference": 9.756479221745273e-08,
+          "max_tail_difference": 4.377466716887213e-08,
+          "max_normalization_error": 4.458556677189307e-07,
+          "max_score_difference": {
+            "nll": 9.287673830016274e-07,
+            "time_nll": 6.982578879544121e-07,
+            "probability_a_b_10s": 1.0283404239253002e-08
+          }
+        },
+        "RULES": {
+          "max_probability_difference": 9.80377142800748e-08,
+          "max_tail_difference": 4.377466716887213e-08,
+          "max_normalization_error": 4.458556677189307e-07,
+          "max_score_difference": {
+            "nll": 1.1535470196832875e-06,
+            "time_nll": 6.982578875103229e-07,
+            "probability_a_b_10s": 1.5863806476779096e-08
+          }
+        },
+        "FULL": {
+          "max_probability_difference": 9.80270169759212e-08,
+          "max_tail_difference": 4.377466716887213e-08,
+          "max_normalization_error": 4.458556677189307e-07,
+          "max_score_difference": {
+            "nll": 9.287673830016274e-07,
+            "time_nll": 6.982578879544121e-07,
+            "probability_a_b_10s": 1.0283404239253002e-08
+          }
+        },
+        "SHUFFLE_RULES": {
+          "max_probability_difference": 9.80270169759212e-08,
+          "max_tail_difference": 4.377466716887213e-08,
+          "max_normalization_error": 4.458556677189307e-07,
+          "max_score_difference": {
+            "nll": 9.264546032561327e-07,
+            "time_nll": 6.982578879544121e-07,
+            "probability_a_b_10s": 1.018185295798002e-08
+          }
+        }
+      }
+    }
+  },
+  "model_inventory": {
+    "neural_parameters": 55577,
+    "boosters": {
+      "hazard": {
+        "iterations": 105,
+        "trees": 105,
+        "features": 76
+      },
+      "type": {
+        "iterations": 80,
+        "trees": 640,
+        "features": 76
+      },
+      "site_active": {
+        "iterations": 80,
+        "trees": 80,
+        "features": 206
+      },
+      "site_destination": {
+        "iterations": 80,
+        "trees": 80,
+        "features": 207
+      },
+      "site_plant": {
+        "iterations": 80,
+        "trees": 80,
+        "features": 207
+      }
+    },
+    "total_deployed_boosting_trees": 985
+  },
+  "small_neural_training": {
+    "cutoffs": 4,
+    "epochs": 10,
+    "finite_losses": true,
+    "output_in_release_package": false
+  },
+  "full_training_rerun": false,
+  "full_cohort_evaluation_rerun": false,
+  "raw_demo_parsing_rerun": false,
+  "commands_tested": [
+    "python main.py --help",
+    "python -m sparc_cs2 data-stats",
+    "python -m unittest discover -s tests -v",
+    "python -m sparc_cs2 evaluate --role validation --output outputs/smoke --seeds 2026 --max-rounds 1 --variants FULL",
+    "python main.py train --help",
+    "python scripts/preprocess.py --help",
+    "python scripts/replot.py --output outputs/core-figures"
+  ],
+  "core_unit_tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "one_round_frozen_evaluation": true,
+  "baseline_verification": {
+    "imports": [
+      "data",
+      "models",
+      "training",
+      "report",
+      "main"
+    ],
+    "help": true,
+    "real_summary_redraw": [
+      "baseline_joint_forest",
+      "baseline_series_heatmap",
+      "baseline_score_plane"
+    ],
+    "report_unit_tests": {
+      "passed": 3,
+      "failed": 0
+    },
+    "full_training_run_in_release_verification": false,
+    "libraries": {
+      "torch": "2.12.1+cu126",
+      "numpy": "2.4.6"
+    },
+    "protocol_metadata": {
+      "dev": {
+        "series": 10,
+        "rounds": 210,
+        "cutoffs": 18210,
+        "sha256": "6ca193300d28b63d8df8cf5047a021bb0e34b6869c8abc116e87435cee1a8e79"
+      },
+      "rio": {
+        "series": 11,
+        "rounds": 215,
+        "cutoffs": 19655,
+        "sha256": "3b9e4983d6e118fa98232ea1384762f2e34b24c175236544cb7214e879cfab01"
+      }
+    },
+    "architecture_checks": {
+      "MLP": {
+        "joint_classes": 10221,
+        "probability_normalized": true,
+        "padding_after_cutoff_invariance": true,
+        "parameters_test_width32": 354833
+      },
+      "GRU": {
+        "joint_classes": 10221,
+        "probability_normalized": true,
+        "padding_after_cutoff_invariance": true,
+        "parameters_test_width32": 394193
+      },
+      "TCN": {
+        "joint_classes": 10221,
+        "probability_normalized": true,
+        "padding_after_cutoff_invariance": true,
+        "parameters_test_width32": 379121
+      },
+      "TRANSFORMER": {
+        "joint_classes": 10221,
+        "probability_normalized": true,
+        "padding_after_cutoff_invariance": true,
+        "parameters_test_width32": 404593
+      }
+    },
+    "real_match_feature_checks": [
+      {
+        "role": "train",
+        "match_id": "2393003",
+        "round_uid": "2393003_000",
+        "frames": 154,
+        "feature_dimensions": 482,
+        "core_neural_272_exact": true,
+        "core_site_192_exact": true,
+        "core_tree_extra18_exact": true,
+        "eligibility_exact": true,
+        "prefix_invariance": true,
+        "label_independence": true
+      },
+      {
+        "role": "validation",
+        "match_id": "2392409",
+        "round_uid": "2392409_000",
+        "frames": 186,
+        "feature_dimensions": 482,
+        "core_neural_272_exact": true,
+        "core_site_192_exact": true,
+        "core_tree_extra18_exact": true,
+        "eligibility_exact": true,
+        "prefix_invariance": true,
+        "label_independence": true
+      },
+      {
+        "role": "test",
+        "match_id": "2393088",
+        "round_uid": "2393088_000",
+        "frames": 126,
+        "feature_dimensions": 482,
+        "core_neural_272_exact": true,
+        "core_site_192_exact": true,
+        "core_tree_extra18_exact": true,
+        "eligibility_exact": true,
+        "prefix_invariance": true,
+        "label_independence": true
+      }
+    ]
+  },
+  "saved_scientific_figures_redrawn": 3,
+  "saved_scientific_figures_visually_checked": [
+    "mechanisms",
+    "deadline_transfer"
+  ],
+  "release_readme": "README.md",
+  "public_source_structure": [
+    "sparc_cs2",
+    "data",
+    "weights/main",
+    "baselines",
+    "results",
+    "source/portable/cs2ai",
+    "scripts",
+    "tests",
+    "docs"
+  ],
+  "small_training_and_generated_validation_outputs_removed_from_package": true,
+  "package_scan": {
+    "no_detected_personal_paths_or_credentials": true,
+    "no_roster_account_ids": true,
+    "all_retained_match_arrays_equal_original": true,
+    "npz_metadata_keys": [
+      "ct_team",
+      "date",
+      "end_tick",
+      "end_time",
+      "event",
+      "match_id",
+      "role",
+      "round_uid",
+      "target_team"
+    ],
+    "all_files_below_25_mib": true,
+    "max_file_bytes": 1539106,
+    "excluded": [
+      "native DEMO recordings",
+      "hidden truth/seen/ct_xyz arrays",
+      "large feature cache",
+      "external baseline checkpoints",
+      "old large models",
+      "paper LaTeX/PDF",
+      "logs",
+      "third-party radar imagery",
+      "Python bytecode"
+    ]
+  },
+  "data_retained_keys": [
+    "cutoff_valid",
+    "event_seconds",
+    "event_time",
+    "events",
+    "ingress_first_time",
+    "pub",
+    "target_bin",
+    "target_mask",
+    "tick",
+    "time",
+    "x"
+  ]
+}

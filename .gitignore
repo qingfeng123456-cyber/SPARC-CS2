@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+outputs/
+baselines/data/cache/
+baselines/results*/
+*.dem
+*.rar
+*.zip
+*.log
+*.tmp
+work/

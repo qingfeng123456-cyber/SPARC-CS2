@@ -1,0 +1,62 @@
+{
+  "schema": "ct-event-cache-v1",
+  "x_shape": "L,10,32",
+  "pub_shape": "L,64",
+  "player_order": "5 CT stable within round; 5 enemy slots assigned at first public exposure",
+  "normalization": "Fixed physical scales, no validation/test fitted statistics",
+  "ct": {
+    "0:3": "XYZ / 4096",
+    "3": "alive",
+    "4": "own presence",
+    "5": "health / 100",
+    "6": "armor / 100",
+    "7": "equipment value / 10000",
+    "8:10": "sin(yaw),cos(yaw)",
+    "10": "flash duration clipped 5s / 5",
+    "11": "defuser",
+    "12": "scoped",
+    "13:16": "past finite-difference XYZ velocity / 350 clipped [-3,3]",
+    "16:21": "one-hot current geometric region",
+    "21:31": "reserved zero",
+    "31": "present"
+  },
+  "enemy": {
+    "0:3": "last exposed XYZ / 4096",
+    "3": "not publicly dead",
+    "4": "currently exposed",
+    "5": "last-seen age /30 clipped 4",
+    "6": "has ever been exposed",
+    "7": "current radar data missing",
+    "16:21": "one-hot last observed region",
+    "31": "known and not publicly dead",
+    "other": "zero; private equipment/health never copied"
+  },
+  "pub": {
+    "0": "elapsed /120",
+    "1:3": "CT,T public alive count /5",
+    "3": "public plant confirmation",
+    "4": "plant age /45 clipped2",
+    "5:7": "time since last public T,CT death /30 clipped1",
+    "8:11": "CT centroid /4096",
+    "11:14": "known-enemy memory centroid /4096",
+    "14:19": "CT aggregate equipment,health,armor,defuser and current exposed enemy count",
+    "19": "known living enemy count /5",
+    "20:25": "CT region counts /5",
+    "25:30": "known enemy region counts /5",
+    "30:64": "reserved zero"
+  },
+  "target_bin": "0..19 event in (j,j+1],20 no event through horizon,-1 unknown",
+  "target_mask": "bits in EVENT_NAMES order",
+  "event_names": [
+    "IngressA",
+    "IngressB",
+    "RegroupAB",
+    "RegroupBA",
+    "PlantA",
+    "PlantB",
+    "DeathT",
+    "DeathCT",
+    "RoundEnd"
+  ],
+  "truth_boundary": "truth,alive,region,events,event_seconds,event_time,ingress_first_time are labels/diagnostics, never model features"
+}

@@ -1,0 +1,48 @@
+{
+  "selection": "Frozen NN10/risk105+80/SITE80",
+  "source_files": [
+    {
+      "source": "work\\compact_selected_20261117\\dev\\summary.json",
+      "sha256": "f9fd76e7da5ad85db315f6187f5772c3a83c3c61c460df6e1cf3467eb10dbd10"
+    },
+    {
+      "source": "work\\compact_selected_20261117\\rio\\summary.json",
+      "sha256": "04a0a21cf5c4724625c225376ef2875b710921086a42bad7ce60cab9af47ccbf"
+    },
+    {
+      "path": "results\\core\\plot_data\\main_results.csv",
+      "source": "essay\\latex\\figures\\compact_data\\main_results.csv",
+      "sha256": "7d9bfc77c3436aed92de2749782e9fade67e270e713f74d2e761363d94b7ed9b"
+    },
+    {
+      "path": "results\\core\\plot_data\\paired_effects.csv",
+      "source": "essay\\latex\\figures\\compact_data\\paired_effects.csv",
+      "sha256": "2cf1fcdc8c818900f8715c8acdbeecc3168389d392cb1bb511ee25aa2dcf4220"
+    },
+    {
+      "path": "results\\core\\plot_data\\time_mark_decomposition.csv",
+      "source": "essay\\latex\\figures\\compact_data\\time_mark_decomposition.csv",
+      "sha256": "26c9524f65bf7203b08699bda393b0359792b50c64d6951ae754e043956f158f"
+    },
+    {
+      "path": "results\\core\\plot_data\\conditional_events.csv",
+      "source": "essay\\latex\\figures\\compact_data\\conditional_events.csv",
+      "sha256": "ef3b2473a4b45fd775d10a23263714afbc589d6babe09d8e4957b946a47ed98a"
+    },
+    {
+      "path": "results\\core\\plot_data\\destination_by_lead.csv",
+      "source": "essay\\latex\\figures\\compact_data\\destination_by_lead.csv",
+      "sha256": "f8fcf8229a4d855dde901edb97b751157b03fc406075c9a4329f8cf859588510"
+    },
+    {
+      "path": "results\\core\\plot_data\\deadline_mass_transfer.csv",
+      "source": "essay\\latex\\figures\\compact_data\\deadline_mass_transfer.csv",
+      "sha256": "3a4364306a5135f5064e82f39d47f7d819b4c4dc3071421d15fa68fc3cd9e216"
+    },
+    {
+      "path": "results\\core\\plot_data\\deadline_mass_transfer.npz",
+      "source": "essay\\latex\\figures\\compact_data\\deadline_mass_transfer.npz",
+      "sha256": "aa0f7a492dec2a35e87f74e316f2518931956e6133437e6ef39e272e02ed0029"
+    }
+  ]
+}

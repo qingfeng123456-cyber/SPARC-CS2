@@ -1,0 +1,19 @@
+{
+  "study": "CS2 Dust2 full-joint architecture baselines",
+  "widths": [128, 192],
+  "training": {
+    "max_epochs": 60,
+    "min_epochs": 10,
+    "patience": 10,
+    "batch_size": 64,
+    "eval_batch_size": 128,
+    "learning_rate": 0.001,
+    "weight_decay": 0.015,
+    "clip_grad_norm": 2.0,
+    "amp": true,
+    "scheduler_epochs": 60,
+    "min_lr": 0.00015,
+    "initialize_class_prior": true,
+    "prior_smoothing": 0.001953125
+  }
+}

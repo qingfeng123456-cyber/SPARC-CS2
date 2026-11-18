@@ -1,0 +1,51 @@
+{
+  "config": {
+    "study": "CS2 Dust2 full-joint architecture baselines",
+    "widths": [
+      128,
+      192
+    ],
+    "training": {
+      "max_epochs": 60,
+      "min_epochs": 10,
+      "patience": 10,
+      "batch_size": 64,
+      "eval_batch_size": 128,
+      "learning_rate": 0.001,
+      "weight_decay": 0.015,
+      "clip_grad_norm": 2.0,
+      "amp": true,
+      "scheduler_epochs": 60,
+      "min_lr": 0.00015,
+      "initialize_class_prior": true,
+      "prior_smoothing": 0.001953125
+    }
+  },
+  "data_manifest_sha256": "13a70f4410110ac8b0a18cedcae9282a864c89150ca6781fd0f8461aca5463d8",
+  "sources": {
+    "data.py": "0834517cc6b61f74eaf2e575b266bbfe2c846f5a40d15e858e0f735fcfcede1b",
+    "main.py": "ff72758359d080ed0152d279e7b0f5d4ad3c4cc8ed5a88267b6322012d504ca2",
+    "models.py": "836ddf1d80da515ee6b2a14c7bde208173d17cbba5b24268c0027c8586be0548",
+    "report.py": "07d08eca0f4c03f8f2e8d927b4a96ec02ad705751cb8ff68790769d4c1bb2ac2",
+    "test_report.py": "9d302c5cea3305974986dda6738c22b610ff77022e0c992b29594af9f2834519",
+    "training.py": "228d9e5aa6b857bf653ad765bb4638e86edf441ae139f98414980596fec528b2",
+    "verify_data.py": "f664071fc58e05233a11a079a12dd080a4ca53e0a4e88f8356e7d0574f127ac4"
+  },
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "models": [
+    "MLP",
+    "GRU",
+    "TCN",
+    "TRANSFORMER"
+  ],
+  "existing_paper_test_scores_already_known": true,
+  "baseline_selection": "Internal 22/8 series only; test not used for hyperparameters",
+  "temporal_support": "20 x 511 nonempty sets plus one tail",
+  "evaluation": "cutoff -> round -> series; seed-score mean",
+  "mode": "formal",
+  "fingerprint": "6a762319180283af76cbedd0a65e805e739fb6759442766348d53f4012ada3f4"
+}

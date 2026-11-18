@@ -1,0 +1,18 @@
+{
+  "schema": "dust2-world-proxy-v1",
+  "map": "de_dust2",
+  "patch_version": "14141",
+  "coordinate_units": "Source world units",
+  "provenance": "Explicit axis-aligned site/staging proxies. Plant coordinates from training match 2393003 verify site association and containment. These are operational geometric regions, pending visual trajectory annotation, not a navmesh reconstruction.",
+  "annotation_status": "plant_containment_checked_trajectory_review_pending",
+  "siteA": [700, 1650, 1900, 3200, -30, 300],
+  "siteB": [-2200, -950, 2100, 3350, -70, 250],
+  "stageA": [400, 1800, 1200, 2200, -150, 350],
+  "stageB": [-2200, -700, 1300, 2450, -150, 350],
+  "ingress_confirm_window_seconds": 3.0,
+  "refractory_seconds": 5.0,
+  "regroup_window_seconds": 15.0,
+  "maximum_crossing_gap_seconds": 0.1,
+  "boundary_inset_units": 24.0,
+  "note": "Region IDs: 0 other, 1 A staging, 2 B staging, 3 A site, 4 B site. Site priority over staging. Model observes a region only for an exposed/currently remembered enemy. Geometry is independent of test trajectories."
+}

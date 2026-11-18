@@ -1,0 +1,85 @@
+{
+  "frozen_at_utc": "2026-11-17T06:12:40.442592+00:00",
+  "decision": "Select the previously validated compact hybrid as the main model.",
+  "decision_evidence": "Two development partitions, three seeds each; repair remains behind compact.",
+  "model": "SPARC-CS2: frozen structured neural + risk boosting + SITE + public rules/deadline projection",
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "fit_scope": "The original main 30 training series only. No development or test refit.",
+  "trained_weights": "Reuse the existing main checkpoints listed below, without additional fitting.",
+  "constants": "Use the original training-fitted support/main/fit.json and source geometry.",
+  "hyperparameters": {
+    "neural_tree_mix": 0.5,
+    "site_mix": 0.5,
+    "projection_escape": 0.02
+  },
+  "validation_gate": "Reproduce the existing main development results and aligned per-cutoff values before external inference.",
+  "expected_development": {
+    "BASE_MIX": 3.06634808,
+    "FULL": 3.03508228
+  },
+  "test_scope": "Every eligible round from every original portable index entry with role=test (Rio).",
+  "exclusion": "Use the pre-existing scoring_eligibility and frame_indices unchanged. Record exclusions.",
+  "endpoint": "Next first event within 20 one-second bins over 511 nonempty simultaneous mark sets, plus no-event tail.",
+  "primary": "Joint negative log likelihood, cutoff mean within round, round mean within series, equal series mean; mean of three seed scores.",
+  "secondary": [
+    "time NLL",
+    "A/B first-ingress probability Brier at 10 seconds",
+    "conditional A/B destination log loss at the observed event bin",
+    "per-series differences and event-deduplicated destination scores"
+  ],
+  "references": [
+    "NEURAL",
+    "TREE",
+    "BASE_MIX",
+    "SITE",
+    "RULES",
+    "SHUFFLE_RULES"
+  ],
+  "main_variant": "FULL",
+  "ablation_semantics": "Frozen-component deletion and matched spatial-permutation control; do not label these as end-to-end retraining.",
+  "uncertainty": "Paired bootstrap over series after averaging seed differences; 10000 draws; report counts and intervals.",
+  "no_test_selection": "No threshold, checkpoint, mixture, model, split or exclusion changes based on Rio scores. Retain all defined references and endpoints.",
+  "reporting": "A positive result supports the evaluated task and cohort; it is not an acceptance guarantee or proof of universal generalization.",
+  "test_predictions_opened_before_this_lock": false,
+  "release_weights_inventory": [
+    {
+      "path": "weights\\main\\clock.json",
+      "bytes": 919,
+      "sha256": "74c32048c4014357cf21a066ea5dfd4a21066824d7f3a0130521029b810fe70f"
+    },
+    {
+      "path": "weights\\main\\neural_seed2026.pt",
+      "bytes": 232688,
+      "sha256": "e39e9b623d75a0366673f7f5ef0300965a3d4dc5de81d2c0a05960f28a802331"
+    },
+    {
+      "path": "weights\\main\\neural_seed2027.pt",
+      "bytes": 232688,
+      "sha256": "6139b83f6d15770fe4329c808719fb5155c14ef5f035e6c6657b17eb13bebded"
+    },
+    {
+      "path": "weights\\main\\neural_seed2028.pt",
+      "bytes": 232688,
+      "sha256": "56b62067a508c96b6c7618c0792a3ad33433703b62f82e36282217619f091121"
+    },
+    {
+      "path": "weights\\main\\risk.joblib",
+      "bytes": 461470,
+      "sha256": "c804f3ba1debfe5080257e5500282587bbd299dfac4cedd90b95f3b3ee311885"
+    },
+    {
+      "path": "weights\\main\\shuffle.joblib",
+      "bytes": 273617,
+      "sha256": "f02b0ac1a8494f1659d04c98a9abc0b8f172a449c6fb8fbb05ce9fea9956e524"
+    },
+    {
+      "path": "weights\\main\\site.joblib",
+      "bytes": 273978,
+      "sha256": "f8fa42577ceb96f3100ddf38293ea97c30ba1b3f8fe6475793b837a27bf41c04"
+    }
+  ]
+}

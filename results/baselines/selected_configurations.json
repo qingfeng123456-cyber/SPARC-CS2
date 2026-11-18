@@ -1,0 +1,75 @@
+{
+  "fingerprint": "518e4d69f9e87dc38830d8f19060ee17a0490deabcda63306c1eafb166c4b565",
+  "choices": {
+    "MLP": {
+      "model_config": {
+        "input_dim": 482,
+        "width": 128,
+        "hidden_dim": 128,
+        "dropout": 0.1,
+        "num_layers": 2,
+        "num_heads": 4,
+        "kernel_size": 3,
+        "num_classes": 10221,
+        "max_prefix_length": 316,
+        "use_cudnn": true
+      },
+      "selected_epoch": 2,
+      "internal_joint_nll": 3.200800863755659,
+      "width": 128
+    },
+    "GRU": {
+      "model_config": {
+        "input_dim": 482,
+        "width": 128,
+        "hidden_dim": 128,
+        "dropout": 0.1,
+        "num_layers": 2,
+        "num_heads": 4,
+        "kernel_size": 3,
+        "num_classes": 10221,
+        "max_prefix_length": 316,
+        "use_cudnn": false
+      },
+      "selected_epoch": 1,
+      "internal_joint_nll": 3.2578182137921403,
+      "width": 128
+    },
+    "TCN": {
+      "model_config": {
+        "input_dim": 482,
+        "width": 128,
+        "hidden_dim": 128,
+        "dropout": 0.1,
+        "num_layers": 7,
+        "num_heads": 4,
+        "kernel_size": 3,
+        "num_classes": 10221,
+        "max_prefix_length": 316,
+        "use_cudnn": true
+      },
+      "selected_epoch": 2,
+      "internal_joint_nll": 3.1977756684106993,
+      "width": 128
+    },
+    "TRANSFORMER": {
+      "model_config": {
+        "input_dim": 482,
+        "width": 128,
+        "hidden_dim": 128,
+        "dropout": 0.1,
+        "num_layers": 4,
+        "num_heads": 4,
+        "kernel_size": 3,
+        "num_classes": 10221,
+        "max_prefix_length": 316,
+        "use_cudnn": true
+      },
+      "selected_epoch": 2,
+      "internal_joint_nll": 3.2217756170398846,
+      "width": 128
+    }
+  },
+  "protocol_fingerprint": "6a762319180283af76cbedd0a65e805e739fb6759442766348d53f4012ada3f4",
+  "selected_without_test_predictions": true
+}

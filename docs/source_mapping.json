@@ -1,0 +1,10 @@
+{
+  "features.py": "work/pilot_event_clock/memory_trial/memory.py: public_features/frame_indices",
+  "helpers.py": "memory_trial/fusion.py: round_weights; study_split.py: internal_split",
+  "neural.py": "gain_v2/neural.py: exact architecture, feature, materialize, escape_law, score",
+  "risk.py": "gain_v2/risk/run_risk.py: exact feature, weighted fit, forecast",
+  "site.py": "gain_v2/scale_gate/defense/run.py: exact features/fitted/group_pred",
+  "rules.py": "gain_v2/scale_gate/support/project.py: unchanged",
+  "inference.py": "compact_selected_20261117/inference.py: public repackaging of frozen forward computations",
+  "source/portable/cs2ai/data.py": "portable/cs2ai/data.py: unchanged source parser and label definitions"
+}

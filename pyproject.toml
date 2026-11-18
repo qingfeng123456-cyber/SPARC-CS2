@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sparc-cs2"
+version = "0.1.0"
+description = "Spatial Attribution and Rule-Guided Next-Event Forecasting in Counter-Strike 2"
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+license = "MIT"
+
+[project.scripts]
+sparc-cs2 = "sparc_cs2.__main__:main"
+
+[tool.setuptools]
+packages = ["sparc_cs2"]
+
+[tool.setuptools.package-data]
+sparc_cs2 = ["geometry.json"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
